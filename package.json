@@ -1,30 +1,35 @@
 {
   "name": "eggheadio-use-typescript-to-develop-react-apps",
   "version": "1.0.0",
-  "description": "Lessons and annotations from https://egghead.io/courses/use-typescript-to-develop-react-applications",
+  "description":
+    "Lessons and annotations from https://egghead.io/courses/use-typescript-to-develop-react-applications",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack ./webpack.config.js",
+    "start": "webpack-dev-server ./webpack.config.js --content-base ./public"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/larrybotha/eggheadio-use-typescript-to-develop-react-apps.git"
+    "url":
+      "git+https://github.com/larrybotha/eggheadio-use-typescript-to-develop-react-apps.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/larrybotha/eggheadio-use-typescript-to-develop-react-apps/issues"
+    "url":
+      "https://github.com/larrybotha/eggheadio-use-typescript-to-develop-react-apps/issues"
   },
-  "homepage": "https://github.com/larrybotha/eggheadio-use-typescript-to-develop-react-apps#readme",
+  "homepage":
+    "https://github.com/larrybotha/eggheadio-use-typescript-to-develop-react-apps#readme",
   "dependencies": {
-    "@types/react": "16.0.18",
-    "@types/react-dom": "16.0.2",
-    "react": "16.0.0",
-    "react-dom": "16.0.0",
-    "ts-loader": "3.0.5",
-    "typescript": "2.5.3",
-    "webpack": "3.8.1",
-    "webpack-dev-server": "2.9.3"
+    "@types/react": "^16.0.18",
+    "@types/react-dom": "^16.0.2",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "ts-loader": "^3.0.5",
+    "typescript": "^2.5.3",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.3"
   }
 }
