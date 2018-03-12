@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
+    "sourceMap": true,
     "jsx": "react",
-    "module": "commonjs"
+    "module": "commonjs",
+    "target": "es5"
   },
   "include": ["src"],
   "compileOnSave": false
