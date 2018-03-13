@@ -1,21 +1,34 @@
 import * as React from 'react';
 import {render} from 'react-dom';
 
-// when creating stateless functional components it's recommended to annotate
-// components using the React.SFC interface
-// React.SFC takes a generic argument allowing one to specify the type annotation
-// for a component
-// The way the annotation is defined here is called an 'inline annotation'
-const App1: React.SFC<{message: string}> = ({message}) => <div>{message}</div>;
+type AppProps = {message: string};
+type AppState = {count: number};
 
-// Inline annotations can be moved out using type annotations:
-type App2Props = {message: string};
-const App2: React.SFC<App2Props> = ({message}) => <div>{message}</div>;
+// In typescript React.Component takes 2 annotations,
+// the first for props, and the second for state
+// class App extends React.Component<{message: string}, {count: number}> {
+// Annotations can also be abstracted using the 'type' keyword
+class App extends React.Component<AppProps, AppState> {
+  constructor(props) {
+    super(props);
 
-render(
-  <div>
-    <App1 message="hello world 1" />
-    <App2 message="hello world 2" />
-  </div>,
-  document.getElementById('root')
-);
+    this.state = {count: 0};
+  }
+
+  handleIncrement = () => {
+    this.setState(({count}) => ({count: count + 1}));
+  };
+
+  render() {
+    const {message} = this.props;
+    const {count} = this.state;
+
+    return (
+      <div onClick={this.handleIncrement}>
+        {message} {count}
+      </div>
+    );
+  }
+}
+
+render(<App message="hello world" />, document.getElementById('root'));
