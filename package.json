@@ -1,8 +1,7 @@
 {
   "name": "eggheadio-use-typescript-to-develop-react-apps",
   "version": "1.0.0",
-  "description":
-    "Lessons and annotations from https://egghead.io/courses/use-typescript-to-develop-react-applications",
+  "description": "Lessons and annotations from https://egghead.io/courses/use-typescript-to-develop-react-applications",
   "main": "index.js",
   "scripts": {
     "build": "webpack ./webpack.config.js",
@@ -10,18 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url":
-      "git+https://github.com/larrybotha/eggheadio-use-typescript-to-develop-react-apps.git"
+    "url": "git+https://github.com/larrybotha/eggheadio-use-typescript-to-develop-react-apps.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url":
-      "https://github.com/larrybotha/eggheadio-use-typescript-to-develop-react-apps/issues"
+    "url": "https://github.com/larrybotha/eggheadio-use-typescript-to-develop-react-apps/issues"
   },
-  "homepage":
-    "https://github.com/larrybotha/eggheadio-use-typescript-to-develop-react-apps#readme",
+  "homepage": "https://github.com/larrybotha/eggheadio-use-typescript-to-develop-react-apps#readme",
   "dependencies": {
     "@types/react": "^16.0.18",
     "@types/react-dom": "^16.0.2",
@@ -31,5 +27,13 @@
     "typescript": "^2.5.3",
     "webpack": "^3.8.1",
     "webpack-dev-server": "^2.9.3"
+  },
+  "devDependencies": {
+    "@types/enzyme": "^3.1.9",
+    "@types/jest": "^22.2.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^22.4.2",
+    "ts-jest": "^22.4.1"
   }
 }
