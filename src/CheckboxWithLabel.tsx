@@ -30,7 +30,7 @@ export class CheckboxWithLabel extends React.Component<
           checked={isChecked}
           id="checkbox"
           type="checkbox"
-        />{' '}
+        />
         {isChecked ? labelOn : labelOff}
       </label>
     );
